@@ -8,19 +8,73 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Website Kopi Kuy</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.css" />
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+
+    <style>
+        .bg-nav {
+        background-color: #73483f;
+      }
+      .bg-cok {
+        background-color: #f4ede5;
+      }
+    </style>
+
 </head>
 
 <body>
-    <nav>
-        <img class="logo" src="images/logo/logo_kuy.png">
-        <div class="navigasi">
-            <a href="#best-seller">Best Seller</a>
-            <a href="#our-team">Our Team</a>
-            <a href="#review">Review</a>
-            <a href="#contact-us">Contact Us</a>
+    <nav
+      class="navbar sticky-top navbar-dark bg-nav navbar-expand-lg bisadicopy">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo/logo_kuy.png" height="40" alt="image" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav11"
+          aria-controls="navbarNav11"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav11">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#our-team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#review">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">Shop</a>
+            </li>
+          </ul>
+          <a href="cart.html" class="btn btn-outline-light position-relative">
+            <i class="bi bi-cart4"></i>
+            <span
+              id="cart_icon"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+            </span>
+          </a>
+          <a
+            target="_blank"
+            class="btn btn-outline-light ms-md-3"
+            href="https://wa.me/6281240410010?text=halo kopi kuy saya mau pesan"
+            ><i class="bi bi-whatsapp"></i> Chat</a
+          >
         </div>
-        <a class="shop" href="produk.html">Shop</a>
-        <a class="chat" href="https://wa.me/628123456?text=Saya ingin bertanya" target="_blank">Chat</a>
+      </div>
     </nav>
 
     <!-- Tulis Kode HTML / <header> Setelah baris di bawah ini (baris 28) -->
@@ -164,15 +218,37 @@
             </div>
         </section>
 
-        <footer>
-            <div class="navigasi">
-                <a href="#best-seller">Best Seller</a>
-                <a href="#our-team">Our Team</a>
-                <a href="#review">Review</a>
-                <a href="#contact-us">Contact Us</a>
+        <footer class="riki-block footer-small py-4 bg-nav position-relative">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                  <ul class="nav justify-content-center justify-content-md-start">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#best-seller"
+                        >Best Seller</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="produk.html">Shop </a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+                  &copy; 2023 Kopi Kuy &amp; Tim . All Rights Reserved
+                </div>
+              </div>
             </div>
-            <p>© 2023 Kopi Kuy. All Rights Reserved</p>
-        </footer>
+          </footer>
     <!--
         Kode HTML tidak boleh lewat dari batas ini
         Pastikan setiap section di tutup
